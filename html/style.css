@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+    .bg {
+        position: absolute;
+        display: none;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;  
+        background-image: url('./img/bg.png');
+        overflow: hidden;
+    }
+
+    .shadow {
+        position: absolute;
+        background: radial-gradient(29.72% 49.10% at 5.7% 98.15%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(30.6% 30.6% at 58.1% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(63.52% 111.77% at 16.82% 80.23%, rgba(78, 152, 194, 0.168) 0%, rgba(78, 152, 194, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .bottom-menu {
+        box-sizing: border-box;
+        position: absolute;
+        width: 63.4375vw;
+        height: 4.635416666666667vw;
+        left: 17.708222222222232vw;
+        top: 11.887852702056433vh;
+        overflow:hidden;
+        background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.07) 2.55%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.50);
+        border: 1px solid rgba(255, 255, 255, 0.30);
+    }
+
+    .bottom-text {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.1022222222222235vw;
+        margin-left: 1vw;
+        margin-top: 1.683787661406026vh;
+        line-height: 122.2%;
+        color: rgba(255, 255, 255, 0.60);
+    }
+
+    
+    .bottom-text span{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5452vw;
+        line-height: 122.2%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.60);
+    }
+
+    .bottom-name-bg {
+        position: absolute;
+        width: 9.21875vw;
+        overflow: hidden;
+        height: 2.2395822222222225vw;
+        left: 44.654023433353336vw;
+        top:2.1437111429937827vh;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 0.3645822222222223vw;
+    }
+
+    .bottom-name-bg .name{
+        font-family: 'Oswald';
+        font-style: normal;
+        margin-top: 0.972855093256815vh;
+        font-weight: 500;
+        font-size: 0.9375vw;
+        line-height: 122.2%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.60);
+    }
+
+    .bottom-name-bg .name span{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.9375vw;
+        line-height: 122.2%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.60);
+    }
+
+    .bottom-wallet-money {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.1458222222222222vw;
+        line-height: 122.2%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top:-3.4767097082735523vh;
+        margin-left: 54vw;
+    }
+
+    .bottom-wallet-money span{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1461222222222222vw;
+        line-height: 122.2%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .red-border{
+        border-color: #6f1414;
+        border-width: 3px; 
+    }
+
+    .red-color{
+        color:#6f1414;
+    }
+
+    .green-color{
+        color: green;
+    }
+    
+    .border-circle{
+        border-top-left-radius: 1.0%; 
+        border-top-right-radius: 1.0%;
+    }
+
+    .close-button {
+        position:absolute;
+        font-style: normal;
+        font-family: 'Oswald';
+        border-radius:0.2vw;
+        margin-left:60.2vw;
+        color:rgb(220, 70, 70);
+        transition:0.3s;
+        font-size:0.9vw;
+        margin-top:0.583864762562036vh;
+    }
+    
+    .close-button:hover {
+        font-size:1.0vw;
+        cursor:pointer;
+        color:white;
+        font-family: 'Oswald';
+        font-style: normal;
+    }
+
+    .items {
+        overflow-y: scroll;
+        position: relative;
+        width: 63.2375vw;
+        overflow-x: hidden;
+        height: 37vw;
+        background: radial-gradient(124.78% 211.82% at 128.62% 213.11%, rgba(223, 57, 57, 0.55) 0%, rgba(223, 57, 57, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(0, 0, 0, 0.42);
+        margin-top:22.221319796954315vh;
+        border: 2px solid rgba(255, 255, 255, 0.28);
+        border-radius: 0.1vw;
+        margin-left:17.74vw;
+		border-color: #6f1414;
+        border-width: 3px; 
+    }
+
+    .item {
+		
+        float: left;
+        box-sizing: border-box;
+        margin-top: 1.9492385786802031vh;
+        margin-left: 2.1vw;
+        width: 18vw;
+        background: radial-gradient(124.78% 211.82% at 128.62% 213.11%, rgba(223, 57, 57, 0.55) 0%, rgba(223, 57, 57, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(0, 0, 0, 0.42);
+        height: 17vw;
+        border: 2px solid rgba(255, 255, 255, 0.28);
+        border-width: 2px; 
+		border-color: #ea5357;
+
+		border-radius: 0.7668711656441718vw;
+    }
+
+    ::-webkit-scrollbar-track
+{
+    border-radius: 0.7668711656441718vw;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+::-webkit-scrollbar
+{
+    z-index:1;
+    width: 0.7668711656441718vw;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color:rgba(223, 57, 57, 0.55)
+}
+
+*{
+    moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+ }
+
+ .item-text {
+    text-align: center;
+    font-style: normal;
+    font-family: 'Oswald';
+    line-height: 122.2%;
+    font-weight: 300;
+    font-size: 2vw;
+    margin-top: 0.9746192893401016vh;
+    color: #94A5A5;
+    letter-spacing: 0.02em;
+ }
+
+ .item-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 10vw;
+    min-width: 10vw;
+    max-height: 10vw;     
+    max-width: 10vw;
+    margin-left: 3.8vw;
+    margin-top: 0.3898477157360406vh;
+}
+
+.prew-but {
+    border: 1px solid #df393982;
+    width: 9vw;
+    height: 2.6vw;
+    margin-left: 4vw;
+    transition:1s;
+    box-shadow: 0px 0px 19px 1px rgba(223, 57, 57, 0.51);
+    margin-top: 0.584771573604061vh;
+    border-radius: 1.1503067484662577vw;
+}
+
+.prew-but t{
+    font-weight: 400;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size:1.3vw;
+    line-height: 2.5vw;
+    text-transform: uppercase;
+    margin-left: 2vw;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.buy-button {
+    border: 1px solid #df393982;
+    position:absolute;
+    height: 3.6vw;
+    width: 18vw;
+    box-shadow: 0px 0px 19px 1px rgba(223, 57, 57, 0.51);
+    margin-top: 94.73299492385787vh;
+    border-radius: 1.1503067484662577vw;
+    background-color: rgba(51, 0, 0, 0.178);
+    transition:1s;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.684049079754601vw;
+    text-shadow: 0px 0px 4px white;
+    letter-spacing: 0.16em;
+    line-height: 3.38036809815951vw;
+    margin-left: 37.9vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.name-category {
+    position: absolute;
+    height:3vw;
+    width: 10vw;
+    text-align: center;
+    font-family: 'Oswald';
+    margin-top: 93.95329949238578vh;
+    font-style: normal;
+    margin-left: 59vw;
+}
+
+#container {
+    width: 21.37116564417178vw;
+    position: absolute;
+    display: block;
+    left: 141vh;
+    height: 35.3159509202454vw;
+    top: 24vh;
+    background: #141414;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  #close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  #main {
+    position: absolute;
+    height: 47.3159509202454vw;
+    width: 29.37116564417178vw;
+       border: 1px solid rgba(255, 255, 255, 0.30);
+    
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+  }
+  
+  #hover {
+    position: absolute;
+  width: 18.788343558282207vw;
+  height: 18.404907975460123vw;
+  left: -3.834355828220859vw;
+  top: 78.02933574164616vh;
+  z-index: 2;
+  
+  background: #df393982;
+  filter: blur(200px);
+  }
+  
+  #hover2 {
+    position: absolute;
+  width: 23.38957055214724vw;
+  height: 22.929447852760735vw;
+  left: 11.196319018404909vw;
+  top: -12.257481859798823vh;
+  background: #5A6BFF;
+  filter: blur(300px);
+  }
+  
+  #image {
+    position: absolute;
+    width: 22.37116564417178vw;
+    height: 10.5187116564417177vw;
+    left: 0px;
+    opacity:0.4;
+    top: 0px;
+      background: #df393982;
+
+  }
+  
+  #imagehover {
+  width: 29.37116564417178vw;
+    position: absolute;
+  left: 0px;
+  height: 14.263803680981596vw;
+  top: 0px;
+  
+  background: linear-gradient(30deg, rgba(39, 39, 39, 0) 0%, #272727 100%);
+  }
+  
+#maintext {
+  left: 4.43558282208589vw;
+  position: absolute;
+  top: 6.565226869297125vh;
+  font-family: 'Oswald';
+  
+  font-weight: 800;
+  font-style: normal;
+  line-height: 3.067484662576687vw;
+  font-size: 3.067484662576687vw;
+   color: #FFFFFF;
+  text-shadow: 0px 4px 13px rgba(255, 255, 255, 0.47);
+}
+  
+#smalltext {
+  width: 19.55521472392638vw;
+   position: absolute;
+  height: 1.3803680981595092vw;
+  top: 13.79893494441157vh;
+  left: 1.94846625766871vw;
+  
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1503067484662577vw;
+  /* identical to box height */
+  
+  text-transform: uppercase;
+  
+  color: rgba(255, 255, 255, 0.6);
+  
+}
+  
+
+#close {
+    position: absolute;
+  width: 1.9115905754827053vw;
+  height: 1.9115905754827053vw;
+  left: 18.52331288343558vw;
+  top: 1.5927408053315064vh;
+  z-index: 1;
+  font-family: 'Oswald';
+  font-style: normal;
+  z-index: 2;
+  background: #d36d6d;
+  border-radius: 2px;
+  }
+  
+#close h2{
+    font-size: 18px;
+    margin-left: 0.7403067484662577vw;
+    margin-top: 0.4091370558375635vh;
+    color: #FFFFFF;
+}
+
+.box-app:hover,.prew-but:hover, .buy-button:hover  {
+  background: #df3939;
+  cursor:pointer;
+}
+
+.box-2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30.9375vw;
+    height: 18.28125vw;
+    left: 50.298333333333332vw;
+    top: 21.14162436548222vh;
+    background: radial-gradient(124.78% 211.82% at 128.62% 213.11%, rgba(237, 121, 121, 0.55) 0%, rgba(237, 121, 121, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(0, 0, 0, 0.42);
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    border-color: #6f1414;
+}
+
+.box-main-text-2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6041666666666665vw;
+    margin-top: 1.9492385786802031vh;
+    margin-left: 1.8vw;
+    color: #FFB4B4;
+}
+
+.box-main-text-2 span{
+      font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.6041666666666665vw;
+    line-height: 3.8541666666666665vw;
+    color: #FFB4B4;
+}
+
+.box-s-text-2 {
+    margin-left: 2vw;
+    width: 12.7vw;
+    margin-top: -0.3898477157360406vh;
+    position: absolute;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7291666666666666vw;
+    line-height: 1.09375vw;
+    color: #FFFFFF;
+    opacity: 0.5; 
+}
+
+.box-app-price-2 {
+    position: absolute;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.78125vw;
+    margin-left: 21vw;
+    margin-top: -0.584771573604061vh;
+    line-height: 122.2%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.box-2-img {
+    background-image: url(./img/mot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13.8vw;
+    width:14.1vw;
+    margin-left: 14.8vw;
+    margin-top: -1.169543147208122vh;
+}
